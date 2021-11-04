@@ -1,0 +1,17 @@
+{% extends "app/base.html" %}
+
+{% block title%} {{ album.name }} {% endblock %}
+
+{% block content%}
+
+<h2> {{album.name}} </h2>
+<p> Songs </p>
+
+{% for song in album.song.all %}
+   <p> {{song.song_Title}} </p> 
+
+
+{% endfor %}
+<a href='{% url "app:Index" %}'>Return to home page </a>
+{% endblock%}
+

@@ -1,0 +1,41 @@
+body{
+    background-color: black;
+    color: blanchedalmond;
+    font-family: Roboto, sans-serif;
+}
+
+h1{
+    text-align: right;
+    font-size: 35px;
+    color: #34b7eb;
+}
+
+h2:hover{
+   color: #34b7eb;
+  }
+
+h3{
+    text-align: right;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+#container{
+    flex-direction: column;
+    background-color: rgb(6, 17, 37);
+    color: rgb(214, 211, 200);
+}
+
+.artist-box{
+    width: 50%;
+    height: 20%;
+    border: rgb(195, 177, 199);
+}
+
+
+.playlist-box{
+    width: 50%;
+    height: 20%;
+    border: rgb(195, 177, 199);
+}

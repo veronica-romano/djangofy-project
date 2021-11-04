@@ -1,0 +1,13 @@
+{% extends "app/base.html" %}
+
+{% block content %}
+
+<div id="container">
+    <ul>
+       <li> <a href='{% url "app:ArtistList" %}' class="artist-box"> Artists</a> </li>
+       <li> <a href='{% url "app:PlaylistList" %}' class="playlist-box"> Playlists </a> </li>
+    </ul>
+    
+</div>
+
+{% endblock %}

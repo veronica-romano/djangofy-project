@@ -1,0 +1,21 @@
+{% extends "app/base.html" %}
+
+{% block title%} Djangofy Project {% endblock %}
+
+{% block content%}
+    {% for playlist in playlist_list %}
+        <section>
+           <h2> 
+            <a href='{% url "app:PlaylistDetail" playlist.id %}'>
+            {{ playlist.playlist_Title }} 
+            </a>
+
+           </h2>
+              <p class="creatorname"> Playlist by: {{ playlist.creator }} </p>
+            
+
+        </section>
+
+    {% endfor %}
+    <a href='{% url "app:Index" %}'>Return to home page </a>
+{% endblock%}

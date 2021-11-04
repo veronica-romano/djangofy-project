@@ -1,0 +1,23 @@
+{% extends "app/base.html" %}
+
+{% block title%} Djangofy Project {% endblock %}
+
+{% block content%}
+    {% for album in album_list %}
+
+        <section>
+            <h2> 
+                <a href='{% url "app:AlbumDetail" album.id %}'>
+                    {{ album.name }} 
+                </a>
+            </h2>
+            
+            {% for song in album.song.all %}
+                <p> {{ song.song_Title }} </p>
+            {% endfor %}       
+      
+        </section>
+
+    {% endfor %}
+    <a href='{% url "app:Index" %}'>Return to home page </a>
+{% endblock%}

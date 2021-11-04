@@ -1,0 +1,21 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title> {% block title %} {% endblock%} Document</title>
+  <link href="{% static 'css/app.css' %}" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Djangofy</h1>
+        <h3>Hello Django</h3>
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+</body>
+</html>
