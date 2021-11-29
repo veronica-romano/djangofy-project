@@ -14,13 +14,13 @@ Veronica
 User:
 usertest1 
 
-MÉTODOS GET, POST
+MÉTODOS GET e POST:
 artists: http://127.0.0.1:8000/api/v1/artists/
 albums: http://127.0.0.1:8000/api/v1/albums/
 songs: http://127.0.0.1:8000/api/v1/songs/
 playlists: http://127.0.0.1:8000/api/v1/playlists/
 
-MÉTODOS: GET, PUT, PATCH, DELETE
+MÉTODOS GET, PUT, PATCH e DELETE:
 artists: http://127.0.0.1:8000/api/v1/artists/{id}
 albums: http://127.0.0.1:8000/api/v1/albums/{id}
 songs: http://127.0.0.1:8000/api/v1/songs/{id}
